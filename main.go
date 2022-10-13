@@ -35,7 +35,7 @@ var SECURITY_TOKEN = os.Getenv("SECURITY_TOKEN")
 
 func main() {
 	if SECURITY_TOKEN == "" {
-		panic("Envionment variable SECURITY_TOKEN is required!")
+		//panic("Envionment variable SECURITY_TOKEN is required!")
 	}
 
 	http.HandleFunc("/favicon.ico", notFound)
